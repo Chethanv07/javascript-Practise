@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day1</title>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+
+    <p>Redirecting............</p>
+    <p class="countdown"></p>
+    <script>
+
+        alert("welcome to this page");
+        let con = confirm("are you sure you want to leave this page?");
+        if (con) {
+            alert("you are leaving this page");
+            window.close();
+        }
+        else {
+            alert("you are still on this page");
+
+
+            // window.setTimeout(function () {
+            //     window.location.href = "www.google.com"
+            // }, 5000);
+
+
+            window.setTimeout(function () {
+                window.location.href = "https://www.google.com";
+            }, 1000);
+
+            window.setInterval(function () {
+                window.location.reload();
+            }, 3000)
+
+        }
+    </script>
+</body>
+
+
+</html>
