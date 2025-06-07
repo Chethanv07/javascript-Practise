@@ -25,19 +25,29 @@
 
 
             // window.setTimeout(function () {
-            //     window.location.href = "www.google.com"
+            //     window.location.href = "www.google.com"s
             // }, 5000);
 
-
+            window.blur();
             window.setTimeout(function () {
                 window.location.href = "https://www.google.com";
-            }, 1000);
+            }, 2000);
 
             window.setInterval(function () {
                 window.location.reload();
             }, 3000)
 
+
+
+
+
         }
+
+        localStorage.setItem("username", "Chethan");
+        let user = localStorage.getItem("username"); // "Chethan"
+        localStorage.removeItem("username");
+        localStorage.clear(); // clears all
+
     </script>
 </body>
 
